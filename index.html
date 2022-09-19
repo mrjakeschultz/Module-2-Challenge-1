@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Landing page for Horiseon web services company"/>
+    <!--not specified in criteria but figure could only help SEO and disabled users-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Horiseon — Make your web presence great</title>
+    <!--Made the title more descriptive, i.e. "Horiseon"-->
+</head>
+
+<body>
+    <!--Changed div element to header element below-->
+    <!--also dispensed with header class due to optimization changes in styling document; see comments there-->
+    <header>
+        <h1>Hori<span class="seo">seo</span>n</h1>
+        <div>
+            <ul>
+                <li>
+                    <a href="#search-engine-optimization">Search Engine Optimization</a>
+                </li>
+                <li>
+                    <a href="#online-reputation-management">Online Reputation Management</a>
+                </li>
+                <li>
+                    <a href="#social-media-marketing">Social Media Marketing</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Feels weird to me to handle this immage in a class.
+    Was unsure how to handle the div below with the 'hero' class accordingly.
+    You can background the image that way. But where does the alt go? 
+    Added a title attribute to do the same thing. -->
+    <div class="hero" title="photograph of four people around a table in an office conference room,
+    focused intently on a business item on the table"></div>
+    <!-- Changed container below from div to section...just made more sense as it contains a bunch of
+    nested divs that all fit a theme.-->
+    <section class="content">
+        <div id="search-engine-optimization" class="subsection-boxes">
+            <!--added id for "search-engine-optimization div"-->
+            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="photograph of a laptop, pens, a magnifying glass and a cup of coffee arranged around 
+            a notebook on a tabletop; the cover of the notebook says 'SEO' in bright letters"/>
+            <!--Added alt text for accessibility-->
+            <h2>Search Engine Optimization</h2>
+            <p>
+                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+            </p>
+        </div>
+
+        <!--For all these divs consolidated the classes in the styling doc for concision...'subsection-boxes'; see comments there.-->
+
+        <div id="online-reputation-management" class="subsection-boxes">
+            <img src="./assets/images/online-reputation-management.jpg" class="float-right"
+            alt="photo of a laptop screen showing a webpage with the banner reading 'reputation' at the top and sevarl bar and line graphs
+            beneath it."/>
+            <h2>Online Reputation Management</h2>
+            <p>
+                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
+            </p>
+        </div>
+        <div id="social-media-marketing" class="subsection-boxes">
+            <img src="./assets/images/social-media-marketing.jpg" class="float-left" alt="top-down perspective photo of several people around a
+            conference table, with speech bubbles saying: 'like'; 'media'; and 'share'. On the table are several large stickers depicting icons from
+            popular social media platforms and the word 'tweet'."/>
+            <h2>Social Media Marketing</h2>
+            <p>
+                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
+            </p>
+        </div>
+    </section>
+
+    <!--Changed div element to section below. Feels more right as it contains several divs that all fit a similar theme for a section.-->
+    <section class="benefits">
+        <div class="benefit-lead">
+            <h3>Lead Generation</h3>
+            <img src="./assets/images/lead-generation.png" alt="Icon of a mechanical gear above a downward arrow pointing to a US Dollar symbol." />
+            <p>
+                Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
+            </p>
+        </div>
+        <div class="benefit-brand">
+            <h3>Brand Awareness</h3>
+            <img src="./assets/images/brand-awareness.png" alt="Silhouette of a man's torso and shoulders, wearing a shirt and necktie. Where the man's head
+            should be there is an icon of of a lightbulb surrounded by squiggles representing outward electromagnetic radiation broadcast."/>
+            <p>
+                Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
+            </p>
+        </div>
+        <div class="benefit-cost">
+            <h3>Cost Management</h3>
+            <img src="./assets/images/cost-management.png" alt="Icon of a mechanical gear overlayed by three circles each containing US Dollar symbols." />
+            <p>
+                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
+            </p>
+        </div>
+    </section>
+    
+    <!--Removed class attributre due to optimization in the styling document; see commments there-->
+    <!--Also changned div element to footer element-->
+    <footer>
+        <!-- Got rid of the below header because it does not match spec image -->
+        <!-- <h2>Made with ❤️️ by Horiseon</h2> -->
+        <!-- The paragraph element text below does not match spec image but kept because in class it was said that
+            a copyright statement is a good practice for businesses...updated date to current year.-->
+        <!-- Added 'copyright' class attribute for accessibility. Figured it can't hurt.-->
+        <p class="copyright">
+            &copy; 2022 Horiseon Social Solution Services, Inc.
+        </p>
+    </footer>
+</body>
+
+</html>
